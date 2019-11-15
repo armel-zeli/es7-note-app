@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no">
+		<title>Note App - Prise de note</title>
+		<link rel="stylesheet" href="styles/styles.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<h1 class="header__title">Note App</h1>
+				<h2 class="header__subtitle">Prend des notes et n'oublie plus !</h2>
+			</div>
+		</header>
+		<div class="actions">
+			<div class="actions__container">
+				<input type="text" id="search-text" class="input" placeholder="Filtrer les notes">
+				<select id="filter-by" class="dropdown">
+					<option value="byEdited">Trier par dernière modification</option>
+					<option value="byCreated">Trier par crée récemment</option>
+					<option value="alphabetical">Trier par ordre alphabétique</option>
+				</select>
+			</div>
+		</div>
+		<div class="container">
+			<div id="notes"></div>
+			<button id="create-note" class="button">Ajouter une note</button>
+		</div>
+		<script src="scripts/uuidv4.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+		<script src="scripts/note-functions.js"></script>
+		<script src="scripts/note-app.js"></script>
+	</body>
+</html>

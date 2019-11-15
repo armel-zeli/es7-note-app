@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no">
+		<title>Editer une note</title>
+		<link rel="stylesheet" href="styles/styles.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<h1 class="header__title">Note App</h1>
+				<h2 class="header__subtitle">Prend des notes et n'oublie plus !</h2>
+			</div>
+		</div>
+		<div class="actions">
+			<div class="actions__container actions__container--spaced">
+				<a href="index.html">Home</a>
+				<span id="last-edited"></span>
+			</div>
+		</div>
+		<div class="container">
+			<input id="note-title" class="title-input" placeholder="Titre">
+			<textarea id="note-body" class="body-input" placeholder="Description"></textarea>
+			<button id="remove-note" class="button button--secondary">Supprimer la note</button>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+		<script src="scripts/note-functions.js"></script>
+		<script src="scripts/note-edit.js"></script>
+	</body>
+</html>
