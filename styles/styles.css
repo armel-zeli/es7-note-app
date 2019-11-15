@@ -25,6 +25,12 @@ a {
     color: #009688;
 }
 
+@media all and (max-width: 600px){
+    select {
+        width: 100%; max-width: 100%;
+    }
+}
+
 /* Container */
 
 .container {
