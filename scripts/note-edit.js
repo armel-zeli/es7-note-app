@@ -18,6 +18,9 @@ bodyElement.value = note.body
 
 dateElement.textContent = generateLastEdited(note.updatedAt)
 
+/**
+ * Store the note title when the user type some contents
+ */
 titleElement.addEventListener('input', (e) => {
     note.title = e.target.value
     note.updatedAt = moment().valueOf()
@@ -25,6 +28,9 @@ titleElement.addEventListener('input', (e) => {
     saveNotes(notes)
 })
 
+/**
+ * Store the body note when the user type some contents
+ */
 bodyElement.addEventListener('input', (e) => {
     note.body = e.target.value
     note.updatedAt = moment().valueOf()
@@ -32,6 +38,9 @@ bodyElement.addEventListener('input', (e) => {
     saveNotes(notes)
 })
 
+/**
+ * Remove the note and redirect to home page
+ */
 removeElement.addEventListener('click',() => {
     removeNote(noteId)
     saveNotes(notes)
